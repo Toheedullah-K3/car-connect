@@ -1,24 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1> Project Title: Car Connect </h1>
+      <h2> Project Members:- </h2>
+      <h3> Bilal Asghar - 4434-FBAS/BSCS4/F21 </h3>
+      <h3> Toqeer Zia - 4455-FBAS/BSCS4/F21 </h3>
+      <h3> Toheed Ullah Khan - 4453-FBAS/BSCS4/F21 </h3>
+    </>
   );
 }
 
