@@ -1,0 +1,27 @@
+{
+  "name": "car-connect",
+  "version": "1.0.0",
+  "description": "Car Connect Web: Simplifying showroom management effortlessly.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Toheedullah-K3/car-connect.git"
+  },
+  "keywords": [
+    "Showroom",
+    "Management",
+    "System"
+  ],
+  "author": "Toheed Ullah Khan, Abdullah Iftikhar, Bilal Asghar, Toqeer Zia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Toheedullah-K3/car-connect/issues"
+  },
+  "homepage": "https://github.com/Toheedullah-K3/car-connect#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
