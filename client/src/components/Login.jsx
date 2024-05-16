@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import './Login.css'; // Import CSS file for styling
+import '../styles/style.css'
+import { Link } from 'react-router-dom';
+import SignUp from './SignupPage';
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -7,13 +9,19 @@ const Login = () => {
     password: ''
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData(prevFormData => {
+      return {
+        ...prevFormData,
+        [name]: value
+      }
+    });
+    console.log(formData)
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = (event) => {
+    event.preventDefault();
     // You can add your login logic here, such as API calls
     console.log('Form submitted with data:', formData);
   };
@@ -42,8 +50,10 @@ const Login = () => {
             required
           />
         </div>
-        <button type="submit">Login</button>
+        <button className='btn login-btn' type="submit">Login</button>
       </form>
+      <h4 style= { {marginTop: "10px", marginRight: '10px', display: "inline-block"} } >Don't have an account?  </h4>
+      <Link to= "/signup" style={ {display: "inline-block"} }> Sign up </Link>
     </div>
   );
 };

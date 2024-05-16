@@ -28,9 +28,9 @@ const Navbar = () => {
           <button className="btn navbar-btn">Explore cars</button>
         </a>
 
-        {/* <Link to="/login" className="btn user-btn" aria-label="Profile">
+        <Link to="/login" className="btn user-btn" aria-label="Profile">
             <PersonIcon className='person-icon' style={{ fontSize: 30 }} />
-        </Link> */}
+        </Link>
       </div>
   </header>
     </>

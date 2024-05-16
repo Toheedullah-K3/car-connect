@@ -291,6 +291,7 @@ button, a { transition: var(--transition); }
 } */
 
 .hero-title {
+  font-size: 4rem;
   max-width: 20ch;
   margin-bottom: 15px;
 }
@@ -306,6 +307,9 @@ button, a { transition: var(--transition); }
   /* border: 2px dotted blue; */
 }
 
+.input-wrapper .input-label{
+  font-size: 1.4rem;
+}
 .hero-form {
   background: var(--gradient);
   border: 1px solid var(--white);
@@ -519,7 +523,6 @@ button, a { transition: var(--transition); }
       left: auto;
       right: 5rem;
       width: 630px;
-      
     }
   
     .hero-form { max-width: 900px; }
@@ -536,7 +539,7 @@ button, a { transition: var(--transition); }
 
 
 
-/* *********---- Login Signup Page ----******** */
+/* *********---- Signup Page ----******** */
 
 
 .signup-container {
@@ -572,13 +575,41 @@ input[type="tel"] {
   width: 100%;
   padding: 10px;
   font-size: 1.6rem;
-  /* background-color: #007bff; */
-  /* color: #fff; */
-  /* border: none;
-  border-radius: 5px;
-  cursor: pointer; */
 }
 
-/* .signup-btn:hover {
-  background-color: #0056b3;
-} */
+
+
+
+/* ------ Login Page ------  */
+
+.login-container {
+  max-width: 400px;
+  margin: 5rem auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.6rem;
+}
+
+

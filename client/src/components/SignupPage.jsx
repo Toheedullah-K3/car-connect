@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/style.css'
+import { Link } from 'react-router-dom';
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -78,6 +79,8 @@ const SignUp = () => {
         {/* You can add more fields here */}
         <button className= "btn signup-btn" type="submit">Sign Up</button>
       </form>
+      <h4 style= { {marginTop: "10px", marginRight: '10px', display: "inline-block"} } > Already have an account? </h4>
+      <Link to= "/login" style={ {display: "inline-block"} }> Log in </Link>
     </div>
   );
 };
