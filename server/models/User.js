@@ -7,7 +7,7 @@ const User = db.define('User',
             type : DataTypes.STRING,
             primaryKey: true,
             
-        },
+        }, 
         username: {
             type : DataTypes.STRING,
             allowNull: false
@@ -15,6 +15,10 @@ const User = db.define('User',
         password: {
             type : DataTypes.STRING,
             allowNull: false
+        },
+        isVerified: {
+            type: DataTypes.BOOLEAN,
+            defaultValue: false
         }
     },
     {
